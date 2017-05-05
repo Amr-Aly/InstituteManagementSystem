@@ -1,0 +1,34 @@
+﻿@model List<InstituteManagementSystem.Models.Student>
+
+@{
+    ViewBag.Title = "temp";
+}
+
+<h2>temp</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Faculty</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].Id.ToString()</td>
+                    <td>@Html.DisplayFor(d => Model[i].Name)</td>
+                    <td>@Html.DisplayFor(d => Model[i].Gender)</td>
+                    <td>@Html.DisplayFor(d => Model[i].department.Name)</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>

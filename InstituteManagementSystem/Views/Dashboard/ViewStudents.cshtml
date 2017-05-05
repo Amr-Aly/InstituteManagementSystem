@@ -1,0 +1,31 @@
+﻿@model List<InstituteManagementSystem.View_Models.DisplayStudentViewModel>
+@{
+    ViewBag.Title = "ViewStudents";
+}
+
+<h2>Students</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Faculty</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (var i = 0;i < Model.Count;i++)
+        {
+            <tr>
+                <td>@Model[i].Id.ToString()</td>
+                <td>@Html.DisplayFor(d => Model[i].Name)</td>
+                <td>@Html.DisplayFor(d => Model[i].Gender)</td>
+                <td>@Html.DisplayFor(d => Model[i].dep)</td>
+                <td>@Html.DisplayFor(d => Model[i].fac)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

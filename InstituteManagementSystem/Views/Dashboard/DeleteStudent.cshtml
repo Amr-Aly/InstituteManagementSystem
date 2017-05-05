@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "DeleteStudent";
+}
+
+<h2>Delete Student</h2>
+
+@using (Html.BeginForm("DeleteStudent", "Dashboard", FormMethod.Post, new { @class = "form-horizontal " }))
+{
+    <div class="form-group">
+        <div class="col-lg-1">
+            @Html.Label("Enter ID", new { @class = "control-label", @for = "id" })
+        </div>
+        @Html.TextBox("id", null, new { @class = "col-lg-3 form-control" })
+    </div>
+    <input type="submit" class="btn btn-primary col-lg-4" value="Search" />
+
+}
+<div class="clearfix"></div>

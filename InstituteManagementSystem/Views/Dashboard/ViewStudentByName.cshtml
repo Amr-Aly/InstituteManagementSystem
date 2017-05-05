@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "ViewStudentByName";
+}
+
+<h2>ViewStudentByName</h2>
+
+@using (Html.BeginForm("ViewStudentByName", "Dashboard", FormMethod.Post, new { @class = "form-horizontal " }))
+{
+    <div class="form-group">
+        <div class="col-lg-1">
+            @Html.Label("Enter Student Name", new { @class = "control-label", @for = "name" })
+        </div>
+        @Html.TextBox("name", null, new { @class = "col-lg-3 form-control" })
+    </div>
+    <input type="submit" class="btn btn-primary col-lg-4" value="Search" />
+
+}
+<div class="clearfix"></div>

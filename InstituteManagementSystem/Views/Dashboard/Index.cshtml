@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    @Html.ActionLink("Add Student", "AddStudent", null, new { @class = "col-lg-3 col-lg-offset-3 btn btn-default" })
+    @Html.ActionLink("Add Department", "AddDepartment", null, new { @class = "col-lg-3 btn-default btn"})
+</div>
+<div class="row">
+    @Html.ActionLink("Add Course", "AddCourse", null, new { @class = "col-lg-3 col-lg-offset-3 btn btn-default" })
+    @Html.ActionLink("Add Faculty", "AddFaculty", null, new { @class = "col-lg-3 btn-default btn" })
+</div>
+<div class="row">
+    @Html.ActionLink("Search Student By ID", "ViewStudent", null, new { @class = "col-lg-3 col-lg-offset-3 btn btn-default" })
+    @Html.ActionLink("Browse Students", "ViewStudents", null, new { @class = "col-lg-3 btn-default btn" })
+</div>
+
+<div class="row">
+    @Html.ActionLink("Search Student By Name", "ViewStudentByName", null, new { @class = "col-lg-3 col-lg-offset-3 btn btn-default" })
+    @Html.ActionLink("Delete Student", "DeleteStudent", null, new { @class = "col-lg-3 btn-default btn" })
+</div>
+
+
+
+<div class="clearfix"></div>
